@@ -1,0 +1,13 @@
+misreads,strategy,n_seeds,total_puzzles,exact_recovery_rate_mean,exact_recovery_rate_std,solvable_rate_mean,solvable_rate_std,num_corrections_mean,num_corrections_std,correction_cost_mean,correction_cost_std,execution_time_ms_mean,execution_time_ms_std
+0,nn_guided,5,100,100.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,3.67,0.08
+0,no_correction,5,100,100.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,2.91,0.13
+0,random_correction,5,100,100.0,0.0,100.0,0.0,0.0,0.0,0.0,0.0,3.47,0.78
+1,nn_guided,5,100,100.0,0.0,100.0,0.0,1.0,0.0,0.2555,0.0189,17.58,1.49
+1,no_correction,5,100,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.38,0.06
+1,random_correction,5,100,16.0,8.22,26.0,8.22,0.26,0.08,1.0185,1.0999,71.48,3.1
+2,nn_guided,5,100,100.0,0.0,100.0,0.0,2.0,0.0,0.5305,0.0191,32.28,1.98
+2,no_correction,5,100,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.33,0.02
+2,random_correction,5,100,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,75.66,1.04
+3,nn_guided,5,100,100.0,0.0,100.0,0.0,3.0,0.0,0.7939,0.0338,54.22,3.12
+3,no_correction,5,100,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.39,0.06
+3,random_correction,5,100,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,75.9,1.72
