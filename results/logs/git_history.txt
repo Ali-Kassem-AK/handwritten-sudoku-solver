@@ -1,0 +1,151 @@
+commit a8a83c2a532a9a97577b9b9c308177da435097dc
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:45 2026 +0000
+
+    docs: add final 11-page academic technical report, 12-slide presentation deck, README, and git history
+
+ README.md                    | 171 +++++++++++++++++++++++++++++++++++++++++++
+ contributions.md             |  22 ++++++
+ reports/final_report.pdf     | Bin 0 -> 1668431 bytes
+ reports/presentation.pptx    | Bin 0 -> 7278358 bytes
+ results/logs/git_history.txt | 138 ++++++++++++++++++++++++++++++++++
+ 5 files changed, 331 insertions(+)
+
+commit 5028c4cac12385f6afcc793951597d5a495ad7a8
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:43 2026 +0000
+
+    feat(eval): execute 5-seed evaluation for Search (Exp 1), CSP (Exp 2), and Correction Strategies (Exp 3)
+
+ results/logs/experiment1_search_raw.csv            | 1601 ++++++++++++++++++++
+ results/logs/experiment2_csp_raw.csv               |  451 ++++++
+ results/logs/experiment3_correction_raw.csv        | 1201 +++++++++++++++
+ results/plots/experiment1_search.png               |  Bin 0 -> 217688 bytes
+ results/plots/experiment2_csp.png                  |  Bin 0 -> 106855 bytes
+ results/plots/experiment3_correction.png           |  Bin 0 -> 239310 bytes
+ results/tables/experiment1_search_summary.csv      |   17 +
+ results/tables/experiment1_search_summary.json     |  319 ++++
+ results/tables/experiment2_csp_summary.csv         |   10 +
+ results/tables/experiment2_csp_summary.json        |  177 +++
+ results/tables/experiment3_correction_summary.csv  |   13 +
+ results/tables/experiment3_correction_summary.json |  207 +++
+ src/eval/__init__.py                               |    1 +
+ src/eval/experiment_correction.py                  |  216 +++
+ src/eval/experiment_csp.py                         |  194 +++
+ src/eval/experiment_search.py                      |  287 ++++
+ src/eval/results.py                                |  324 ++++
+ 17 files changed, 5018 insertions(+)
+
+commit 103700233fb6185d6b76a73bf659a79550bb6e1b
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:43 2026 +0000
+
+    test: add 24 unit, integration, edge-case, and impossible-case tests across all modules
+
+ tests/__init__.py         |  35 ++++++++++
+ tests/__main__.py         |  11 ++++
+ tests/test_csp.py         |  77 ++++++++++++++++++++++
+ tests/test_data.py        | 131 ++++++++++++++++++++++++++++++++++++
+ tests/test_edge_cases.py  | 162 +++++++++++++++++++++++++++++++++++++++++++++
+ tests/test_integration.py |  89 +++++++++++++++++++++++++
+ tests/test_nn.py          |  71 ++++++++++++++++++++
+ tests/test_search.py      | 164 ++++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 740 insertions(+)
+
+commit 1e2da48611453ae647998dd47c94bfb0761a183f
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:42 2026 +0000
+
+    feat(integration): implement 12-stage neuro-symbolic Sudoku pipeline, cooperation visualization, and runnable demo
+
+ results/logs/demo_run_log.json     | 833 +++++++++++++++++++++++++++++++++++++
+ results/plots/demo_cooperation.png | Bin 0 -> 429841 bytes
+ results/plots/demo_mosaic.png      | Bin 0 -> 7247 bytes
+ run_demo.py                        | 381 +++++++++++++++++
+ src/integration/__init__.py        |   1 +
+ src/integration/correction.py      | 294 +++++++++++++
+ src/integration/pipeline.py        | 360 ++++++++++++++++
+ src/integration/visualization.py   | 275 ++++++++++++
+ 8 files changed, 2144 insertions(+)
+
+commit d8007e1b588dccec883156635cadf9dcbdf3700e
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:41 2026 +0000
+
+    feat(search): implement UCS, Greedy Best-First, and A* digit correction search with admissible disjoint-conflict heuristic
+
+ src/search/__init__.py |   1 +
+ src/search/astar.py    | 200 +++++++++++++++++++++++++++++++
+ src/search/greedy.py   | 122 +++++++++++++++++++
+ src/search/metrics.py  |  97 +++++++++++++++
+ src/search/problem.py  | 312 +++++++++++++++++++++++++++++++++++++++++++++++++
+ src/search/ucs.py      | 123 +++++++++++++++++++
+ 6 files changed, 855 insertions(+)
+
+commit 12954f9db24891de24abc072f99569a072b4a325
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:41 2026 +0000
+
+    feat(csp): implement switchable Sudoku CSP solvers (BT, BT+FC, BT+FC+AC3) with AC-3 conflict detection and instrumentation
+
+ src/csp/__init__.py         |   1 +
+ src/csp/ac3.py              | 120 +++++++++++++
+ src/csp/backtracking.py     | 108 ++++++++++++
+ src/csp/forward_checking.py | 168 ++++++++++++++++++
+ src/csp/metrics.py          |  74 ++++++++
+ src/csp/sudoku.py           | 412 ++++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 883 insertions(+)
+
+commit 4fcd0eae924fae3faa52e2936d71b196a83a5538
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:40 2026 +0000
+
+    feat(nn): implement DigitMLP (98.63% test acc), LogisticRegressionBaseline (92.12%), and validation Temperature Scaling (ECE 0.0024)
+
+ models/digit_mlp.npz                       | Bin 0 -> 413399 bytes
+ models/logreg_baseline.npz                 | Bin 0 -> 27402 bytes
+ models/model_config.json                   | 254 ++++++++++++
+ results/plots/nn_evaluation.png            | Bin 0 -> 287129 bytes
+ results/tables/logreg_confusion_matrix.csv |  10 +
+ results/tables/nn_confusion_matrix.csv     |  10 +
+ results/tables/nn_test_metrics.json        | 633 +++++++++++++++++++++++++++++
+ src/nn/__init__.py                         |   1 +
+ src/nn/calibration.py                      | 113 +++++
+ src/nn/evaluate.py                         | 264 ++++++++++++
+ src/nn/model.py                            | 210 ++++++++++
+ src/nn/predict.py                          | 166 ++++++++
+ src/nn/train.py                            | 342 ++++++++++++++++
+ 13 files changed, 2003 insertions(+)
+
+commit 1d3b8610feb26505edd5714b60a4e500ac40f1be
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:40 2026 +0000
+
+    feat(data): implement MNIST 1-9 preprocessing (50k/10k/10k split), unique Sudoku generator, and 252x252 mosaic builder
+
+ data/generated/sample_mosaic_seed_142.png   |  Bin 0 -> 6136 bytes
+ data/generated/sample_mosaic_seed_242.png   |  Bin 0 -> 6183 bytes
+ data/generated/sample_mosaic_seed_342.png   |  Bin 0 -> 6477 bytes
+ data/generated/sample_mosaic_seed_42.png    |  Bin 0 -> 6659 bytes
+ data/generated/sample_mosaic_seed_442.png   |  Bin 0 -> 6638 bytes
+ data/generated/sample_mosaics_metadata.json | 2062 +++++++++++++++++++++++++++
+ data/processed/preprocessing_config.json    |   39 +
+ src/data/__init__.py                        |    1 +
+ src/data/make_data.py                       |  154 ++
+ src/data/mnist_loader.py                    |  285 ++++
+ src/data/mosaic_generator.py                |  291 ++++
+ src/data/puzzle_generator.py                |  241 ++++
+ 12 files changed, 3073 insertions(+)
+
+commit 9c17ae6dda6acad73cf0973583c1fa7dd0e204c6
+Author: AI Project Specialist <ai-specialist@sudoku-project.edu>
+Date:   Sun Nov 1 23:39:39 2026 +0000
+
+    chore: initialize repository structure, pinned requirements, and data documentation
+
+ .gitignore         | 24 ++++++++++++++++++++
+ data/README.md     | 17 ++++++++++++++
+ data_dictionary.md | 66 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ requirements.txt   | 10 +++++++++
+ src/__init__.py    |  2 ++
+ 5 files changed, 119 insertions(+)
