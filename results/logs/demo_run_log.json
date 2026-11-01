@@ -1,0 +1,833 @@
+{
+  "nn_enabled": {
+    "status": "SOLVED",
+    "nn_enabled": true,
+    "search_algorithm": "A*",
+    "csp_mode": "BT+FC+AC3",
+    "num_givens": 35,
+    "num_injected_errors": 2,
+    "max_corrections_budget": 3,
+    "puzzle_seed": 42,
+    "initial_cell_accuracy": 0.942857,
+    "exact_puzzle_recovered": true,
+    "exact_solution_recovered": true,
+    "puzzle_solvable": true,
+    "initial_conflicts": [
+      {
+        "cell_a": [
+          0,
+          6
+        ],
+        "cell_b": [
+          6,
+          6
+        ],
+        "digit": 6
+      },
+      {
+        "cell_a": [
+          5,
+          8
+        ],
+        "cell_b": [
+          6,
+          8
+        ],
+        "digit": 7
+      }
+    ],
+    "ac3_initial_consistent": false,
+    "ac3_initial_metrics": {
+      "assignments": 0,
+      "backtracks": 0,
+      "constraint_checks": 723,
+      "domain_reductions": 22,
+      "execution_time": 0.001889
+    },
+    "ac3_singleton_domains_count": 35,
+    "ac3_emptied_domains_count": 1,
+    "injected_errors": [
+      {
+        "row": 0,
+        "col": 6,
+        "ground_truth_digit": 1,
+        "original_predicted_digit": 1,
+        "injected_predicted_digit": 6,
+        "original_probabilities": [
+          0.993376,
+          0.000622,
+          3e-06,
+          0.002704,
+          3.1e-05,
+          0.000188,
+          0.002608,
+          0.000441,
+          2.6e-05
+        ],
+        "modified_probabilities": [
+          0.367534,
+          0.00935,
+          4.9e-05,
+          0.040616,
+          0.000469,
+          0.535789,
+          0.03918,
+          0.006625,
+          0.000388
+        ],
+        "injection_seed": 42,
+        "total_injected_errors": 2
+      },
+      {
+        "row": 6,
+        "col": 8,
+        "ground_truth_digit": 9,
+        "original_predicted_digit": 9,
+        "injected_predicted_digit": 7,
+        "original_probabilities": [
+          0.0,
+          0.0,
+          0.0,
+          3.4e-05,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.999965
+        ],
+        "modified_probabilities": [
+          2.8e-05,
+          0.0,
+          8e-06,
+          0.086738,
+          1e-06,
+          0.0,
+          0.542885,
+          9.1e-05,
+          0.370249
+        ],
+        "injection_seed": 42,
+        "total_injected_errors": 2
+      }
+    ],
+    "search_metrics": {
+      "nodes_generated": 47,
+      "nodes_expanded": 3,
+      "goal_checks": 3,
+      "num_corrections": 2,
+      "final_correction_cost": 0.759647,
+      "solution_found": true,
+      "execution_time": 0.041379
+    },
+    "final_csp_metrics": {
+      "assignments": 51,
+      "backtracks": 5,
+      "constraint_checks": 15185,
+      "domain_reductions": 441,
+      "execution_time": 0.021169
+    },
+    "correction_log": [
+      {
+        "Cell": "(6, 8)",
+        "Read digit": 7,
+        "Corrected digit": 9,
+        "Original probability": 0.5429,
+        "New probability": 0.3702,
+        "Correction cost": 0.3827,
+        "Search algorithm": "A*"
+      },
+      {
+        "Cell": "(0, 6)",
+        "Read digit": 6,
+        "Corrected digit": 1,
+        "Original probability": 0.5358,
+        "New probability": 0.3675,
+        "Correction cost": 0.3769,
+        "Search algorithm": "A*"
+      }
+    ],
+    "unreadable_report": null,
+    "total_pipeline_time_sec": 0.085416
+  },
+  "csp_comparison": {
+    "BT": {
+      "assignments": 86,
+      "backtracks": 40,
+      "constraint_checks": 3931,
+      "domain_reductions": 0,
+      "execution_time": 0.012473
+    },
+    "BT+FC": {
+      "assignments": 71,
+      "backtracks": 25,
+      "constraint_checks": 1814,
+      "domain_reductions": 444,
+      "execution_time": 0.00218
+    },
+    "BT+FC+AC3": {
+      "assignments": 51,
+      "backtracks": 5,
+      "constraint_checks": 15185,
+      "domain_reductions": 441,
+      "execution_time": 0.022483
+    }
+  },
+  "nn_disabled": {
+    "status": "UNREADABLE",
+    "nn_enabled": false,
+    "search_algorithm": "Random-Correction",
+    "csp_mode": "BT+FC+AC3",
+    "num_givens": 35,
+    "num_injected_errors": 2,
+    "max_corrections_budget": 3,
+    "puzzle_seed": 42,
+    "initial_cell_accuracy": 0.942857,
+    "exact_puzzle_recovered": false,
+    "exact_solution_recovered": false,
+    "puzzle_solvable": false,
+    "initial_conflicts": [
+      {
+        "cell_a": [
+          0,
+          6
+        ],
+        "cell_b": [
+          6,
+          6
+        ],
+        "digit": 6
+      },
+      {
+        "cell_a": [
+          5,
+          8
+        ],
+        "cell_b": [
+          6,
+          8
+        ],
+        "digit": 7
+      }
+    ],
+    "ac3_initial_consistent": false,
+    "ac3_initial_metrics": {
+      "assignments": 0,
+      "backtracks": 0,
+      "constraint_checks": 723,
+      "domain_reductions": 22,
+      "execution_time": 0.003907
+    },
+    "ac3_singleton_domains_count": 35,
+    "ac3_emptied_domains_count": 1,
+    "injected_errors": [
+      {
+        "row": 0,
+        "col": 6,
+        "ground_truth_digit": 1,
+        "original_predicted_digit": 1,
+        "injected_predicted_digit": 6,
+        "original_probabilities": [
+          0.993376,
+          0.000622,
+          3e-06,
+          0.002704,
+          3.1e-05,
+          0.000188,
+          0.002608,
+          0.000441,
+          2.6e-05
+        ],
+        "modified_probabilities": [
+          0.367534,
+          0.00935,
+          4.9e-05,
+          0.040616,
+          0.000469,
+          0.535789,
+          0.03918,
+          0.006625,
+          0.000388
+        ],
+        "injection_seed": 42,
+        "total_injected_errors": 2
+      },
+      {
+        "row": 6,
+        "col": 8,
+        "ground_truth_digit": 9,
+        "original_predicted_digit": 9,
+        "injected_predicted_digit": 7,
+        "original_probabilities": [
+          0.0,
+          0.0,
+          0.0,
+          3.4e-05,
+          0.0,
+          0.0,
+          1e-06,
+          0.0,
+          0.999965
+        ],
+        "modified_probabilities": [
+          2.8e-05,
+          0.0,
+          8e-06,
+          0.086738,
+          1e-06,
+          0.0,
+          0.542885,
+          9.1e-05,
+          0.370249
+        ],
+        "injection_seed": 42,
+        "total_injected_errors": 2
+      }
+    ],
+    "search_metrics": {
+      "nodes_generated": 3452,
+      "nodes_expanded": 80,
+      "goal_checks": 80,
+      "num_corrections": 0,
+      "final_correction_cost": 0.0,
+      "solution_found": false,
+      "execution_time": 0.111752
+    },
+    "final_csp_metrics": null,
+    "correction_log": [],
+    "unreadable_report": {
+      "status": "Unreadable",
+      "least_confident_cells": [
+        {
+          "cell": "(0, 0)",
+          "row": 0,
+          "col": 0,
+          "predicted_digit": 3,
+          "confidence": 0.12,
+          "top_alternatives": [
+            [
+              3,
+              0.12
+            ],
+            [
+              1,
+              0.11
+            ],
+            [
+              2,
+              0.11
+            ]
+          ]
+        },
+        {
+          "cell": "(0, 2)",
+          "row": 0,
+          "col": 2,
+          "predicted_digit": 8,
+          "confidence": 0.12,
+          "top_alternatives": [
+            [
+              8,
+              0.12
+            ],
+            [
+              1,
+              0.11
+            ],
+            [
+              2,
+              0.11
+            ]
+          ]
+        },
+        {
+          "cell": "(0, 5)",
+          "row": 0,
+          "col": 5,
+          "predicted_digit": 7,
+          "confidence": 0.12,
+          "top_alternatives": [
+            [
+              7,
+              0.12
+            ],
+            [
+              1,
+              0.11
+            ],
+            [
+              2,
+              0.11
+            ]
+          ]
+        },
+        {
+          "cell": "(0, 6)",
+          "row": 0,
+          "col": 6,
+          "predicted_digit": 6,
+          "confidence": 0.12,
+          "top_alternatives": [
+            [
+              6,
+              0.12
+            ],
+            [
+              1,
+              0.11
+            ],
+            [
+              2,
+              0.11
+            ]
+          ]
+        },
+        {
+          "cell": "(1, 1)",
+          "row": 1,
+          "col": 1,
+          "predicted_digit": 1,
+          "confidence": 0.12,
+          "top_alternatives": [
+            [
+              1,
+              0.12
+            ],
+            [
+              2,
+              0.11
+            ],
+            [
+              3,
+              0.11
+            ]
+          ]
+        },
+        {
+          "cell": "(1, 2)",
+          "row": 1,
+          "col": 2,
+          "predicted_digit": 4,
+          "confidence": 0.12,
+          "top_alternatives": [
+            [
+              4,
+              0.12
+            ],
+            [
+              1,
+              0.11
+            ],
+            [
+              2,
+              0.11
+            ]
+          ]
+        }
+      ],
+      "detected_conflicts": [
+        {
+          "cell_a": "(0, 6)",
+          "cell_b": "(6, 6)",
+          "digit": 6
+        },
+        {
+          "cell_a": "(5, 8)",
+          "cell_b": "(6, 8)",
+          "digit": 7
+        }
+      ],
+      "ac3_emptied_cells": [
+        [
+          0,
+          6
+        ]
+      ],
+      "explanation": "Unreadable: Detected 35 low-confidence cells (<0.70) and 2 duplicate-digit conflict(s), which exceeds the configured correction budget of 3 corrections (after expanding 80 search states)."
+    },
+    "total_pipeline_time_sec": 0.133683
+  },
+  "unreadable_demo": {
+    "status": "UNREADABLE",
+    "nn_enabled": true,
+    "search_algorithm": "A*",
+    "csp_mode": "BT+FC+AC3",
+    "num_givens": 35,
+    "num_injected_errors": 4,
+    "max_corrections_budget": 2,
+    "puzzle_seed": 49,
+    "initial_cell_accuracy": 0.885714,
+    "exact_puzzle_recovered": false,
+    "exact_solution_recovered": false,
+    "puzzle_solvable": false,
+    "initial_conflicts": [
+      {
+        "cell_a": [
+          0,
+          2
+        ],
+        "cell_b": [
+          2,
+          1
+        ],
+        "digit": 7
+      },
+      {
+        "cell_a": [
+          0,
+          2
+        ],
+        "cell_b": [
+          3,
+          2
+        ],
+        "digit": 7
+      },
+      {
+        "cell_a": [
+          0,
+          5
+        ],
+        "cell_b": [
+          4,
+          5
+        ],
+        "digit": 8
+      },
+      {
+        "cell_a": [
+          2,
+          5
+        ],
+        "cell_b": [
+          3,
+          5
+        ],
+        "digit": 1
+      },
+      {
+        "cell_a": [
+          3,
+          1
+        ],
+        "cell_b": [
+          7,
+          1
+        ],
+        "digit": 5
+      }
+    ],
+    "ac3_initial_consistent": false,
+    "ac3_initial_metrics": {
+      "assignments": 0,
+      "backtracks": 0,
+      "constraint_checks": 495,
+      "domain_reductions": 8,
+      "execution_time": 0.001295
+    },
+    "ac3_singleton_domains_count": 34,
+    "ac3_emptied_domains_count": 1,
+    "injected_errors": [
+      {
+        "row": 4,
+        "col": 5,
+        "ground_truth_digit": 6,
+        "original_predicted_digit": 6,
+        "injected_predicted_digit": 8,
+        "original_probabilities": [
+          0.0,
+          2.7e-05,
+          1e-05,
+          1e-06,
+          0.086275,
+          0.900411,
+          0.0,
+          0.013274,
+          2e-06
+        ],
+        "modified_probabilities": [
+          0.0,
+          3e-05,
+          1.1e-05,
+          1e-06,
+          0.096762,
+          0.422107,
+          0.0,
+          0.481087,
+          3e-06
+        ],
+        "injection_seed": 49,
+        "total_injected_errors": 4
+      },
+      {
+        "row": 7,
+        "col": 1,
+        "ground_truth_digit": 8,
+        "original_predicted_digit": 8,
+        "injected_predicted_digit": 5,
+        "original_probabilities": [
+          2e-05,
+          3.5e-05,
+          0.001175,
+          0.000108,
+          0.016007,
+          0.002911,
+          1e-06,
+          0.978521,
+          0.001223
+        ],
+        "modified_probabilities": [
+          0.000407,
+          0.000714,
+          0.023679,
+          0.002169,
+          0.520743,
+          0.058689,
+          1.5e-05,
+          0.368933,
+          0.02465
+        ],
+        "injection_seed": 49,
+        "total_injected_errors": 4
+      },
+      {
+        "row": 2,
+        "col": 5,
+        "ground_truth_digit": 4,
+        "original_predicted_digit": 4,
+        "injected_predicted_digit": 1,
+        "original_probabilities": [
+          0.0,
+          0.0,
+          1e-06,
+          0.999882,
+          0.0,
+          4.7e-05,
+          0.0,
+          4e-06,
+          6.6e-05
+        ],
+        "modified_probabilities": [
+          0.50978,
+          2e-06,
+          0.000624,
+          0.417493,
+          7.4e-05,
+          0.02889,
+          2e-06,
+          0.002318,
+          0.040818
+        ],
+        "injection_seed": 49,
+        "total_injected_errors": 4
+      },
+      {
+        "row": 0,
+        "col": 2,
+        "ground_truth_digit": 2,
+        "original_predicted_digit": 2,
+        "injected_predicted_digit": 7,
+        "original_probabilities": [
+          0.00049,
+          0.983773,
+          0.007504,
+          0.0,
+          8.9e-05,
+          4e-06,
+          0.007595,
+          0.000532,
+          1.2e-05
+        ],
+        "modified_probabilities": [
+          0.006422,
+          0.3615,
+          0.098266,
+          5e-06,
+          0.001166,
+          5.1e-05,
+          0.525468,
+          0.006968,
+          0.000154
+        ],
+        "injection_seed": 49,
+        "total_injected_errors": 4
+      }
+    ],
+    "search_metrics": {
+      "nodes_generated": 684,
+      "nodes_expanded": 684,
+      "goal_checks": 684,
+      "num_corrections": 0,
+      "final_correction_cost": 0.0,
+      "solution_found": false,
+      "execution_time": 0.597204
+    },
+    "final_csp_metrics": null,
+    "correction_log": [],
+    "unreadable_report": {
+      "status": "Unreadable",
+      "least_confident_cells": [
+        {
+          "cell": "(4, 5)",
+          "row": 4,
+          "col": 5,
+          "predicted_digit": 8,
+          "confidence": 0.4811,
+          "top_alternatives": [
+            [
+              8,
+              0.4811
+            ],
+            [
+              6,
+              0.4221
+            ],
+            [
+              5,
+              0.0968
+            ]
+          ]
+        },
+        {
+          "cell": "(2, 5)",
+          "row": 2,
+          "col": 5,
+          "predicted_digit": 1,
+          "confidence": 0.5098,
+          "top_alternatives": [
+            [
+              1,
+              0.5098
+            ],
+            [
+              4,
+              0.4175
+            ],
+            [
+              9,
+              0.0408
+            ]
+          ]
+        },
+        {
+          "cell": "(7, 1)",
+          "row": 7,
+          "col": 1,
+          "predicted_digit": 5,
+          "confidence": 0.5207,
+          "top_alternatives": [
+            [
+              5,
+              0.5207
+            ],
+            [
+              8,
+              0.3689
+            ],
+            [
+              6,
+              0.0587
+            ]
+          ]
+        },
+        {
+          "cell": "(0, 2)",
+          "row": 0,
+          "col": 2,
+          "predicted_digit": 7,
+          "confidence": 0.5255,
+          "top_alternatives": [
+            [
+              7,
+              0.5255
+            ],
+            [
+              2,
+              0.3615
+            ],
+            [
+              3,
+              0.0983
+            ]
+          ]
+        },
+        {
+          "cell": "(7, 0)",
+          "row": 7,
+          "col": 0,
+          "predicted_digit": 7,
+          "confidence": 0.8984,
+          "top_alternatives": [
+            [
+              7,
+              0.8984
+            ],
+            [
+              4,
+              0.0784
+            ],
+            [
+              1,
+              0.0141
+            ]
+          ]
+        },
+        {
+          "cell": "(2, 3)",
+          "row": 2,
+          "col": 3,
+          "predicted_digit": 3,
+          "confidence": 0.9447,
+          "top_alternatives": [
+            [
+              3,
+              0.9447
+            ],
+            [
+              8,
+              0.0531
+            ],
+            [
+              9,
+              0.0012
+            ]
+          ]
+        }
+      ],
+      "detected_conflicts": [
+        {
+          "cell_a": "(0, 2)",
+          "cell_b": "(2, 1)",
+          "digit": 7
+        },
+        {
+          "cell_a": "(0, 2)",
+          "cell_b": "(3, 2)",
+          "digit": 7
+        },
+        {
+          "cell_a": "(0, 5)",
+          "cell_b": "(4, 5)",
+          "digit": 8
+        },
+        {
+          "cell_a": "(2, 5)",
+          "cell_b": "(3, 5)",
+          "digit": 1
+        },
+        {
+          "cell_a": "(3, 1)",
+          "cell_b": "(7, 1)",
+          "digit": 5
+        }
+      ],
+      "ac3_emptied_cells": [
+        [
+          0,
+          2
+        ]
+      ],
+      "explanation": "Unreadable: Detected 4 low-confidence cells (<0.70) and 5 duplicate-digit conflict(s), which exceeds the configured correction budget of 2 corrections (after expanding 684 search states)."
+    },
+    "total_pipeline_time_sec": 0.617035
+  }
+}
