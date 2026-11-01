@@ -1,0 +1,39 @@
+{
+  "seed": 42,
+  "raw_train_total": 60000,
+  "raw_test_total": 10000,
+  "raw_train_split": 50000,
+  "raw_val_split": 10000,
+  "zeros_excluded_train": 4927,
+  "zeros_excluded_val": 996,
+  "zeros_excluded_test": 980,
+  "filtered_train_count": 45073,
+  "filtered_val_count": 9004,
+  "filtered_test_count": 9020,
+  "image_shape": [
+    28,
+    28
+  ],
+  "pixel_range": [
+    0.0,
+    1.0
+  ],
+  "class_mapping": {
+    "0": 1,
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 5,
+    "5": 6,
+    "6": 7,
+    "7": 8,
+    "8": 9
+  },
+  "digit_to_class_formula": "class_idx = digit - 1 for digit in 1..9",
+  "sha256": {
+    "train_images": "440fcabf73cc546fa21475e81ea370265605f56be210a4024d2ca8f203523609",
+    "train_labels": "3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c",
+    "test_images": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6",
+    "test_labels": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6"
+  }
+}
